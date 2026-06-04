@@ -8,6 +8,44 @@ body{
     background-color: black;
     color: white;
 }
+/* nav css  */
+nav{
+    height: 70px;
+    background-color: rgb(37, 37, 37);
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.navMenu:link {
+    /* padding: 20px 30px; */
+    font-size: x-large;
+    color: #9C9C9C;
+    text-decoration: none;
+}
+.navMenu:hover{
+    color: #707070;
+}
+.navMenu:active{
+    text-decoration: underline  ;
+}
+.navMenu:visited{
+    color: #9C9C9C;
+}
+.navMenu i{
+    font-size: 28px;
+    color: #9C9C9C;
+}
+/* .navMenu i:hover{
+    color: white;
+} */
+
+
+/* end nav css  */
 #userInfo{
 }
 .userInform{
@@ -20,6 +58,9 @@ body{
 .leftDiv h1{
     text-align: center;
     font-weight: 800;
+}
+.textShadowDemo{
+    text-shadow: 3px 3px 4px red, 5px 5px 6px orange ;
 }
 .leftDiv p{
     line-height: 1.5;
@@ -46,4 +87,54 @@ body{
     height: 300px;
     border-radius: 50%;
     margin: 20px auto;
+}
+
+
+/* project css  */
+
+
+.projectsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* contactform  */
+.contForm{
+    padding: 1rem;
+}
+
+.contactForm{
+    padding: 30px;
+    width: 40%;
+    margin: 20px auto;
+    background-color: rgb(37, 37, 37);
+
+
+}
+label{
+    font-size: 20px;
+}
+#userName, #userEmail, #message{
+    background-color: #9C9C9C;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.topArrow{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(37, 37, 37);
+    padding: 13px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+}
+.topArrow:hover{
+    box-shadow: 2px 2px 3px 3px rgb(114, 114, 114);
 }
