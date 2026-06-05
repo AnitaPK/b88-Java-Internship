@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+        .moveBox{
+            transform: translate(400px,300px);
+        }
+        .rotateBox{
+            transform: rotateX(45deg);
+        }
+        .scaleBox:hover{
+            transform: scale(1.5,1.5);
+        }
+        .transExp{
+            transition: width 3s, height 5s, font-size 5s, background-color 8s;
+        }
+        .transExp:hover{
+            width: 400px;
+            height: 400px;
+            font-size: 60px;
+            background-color: blue;
+        }
+        .animax{
+            animation: animationExOne 9s 10s;
+        }
+        @keyframes animationExOne{
+            0%{
+                background-color: red;
+            }
+            25%{background-color: green;transform: translateX(200px);}
+            50%{background-color: blue;}
+            100%{background-color: white;transform: translateX(200px);}
+
+        }
+                @keyframes animationExTwo{
+            0%{
+                background-color: red;
+            }
+            25%{background-color: green;}
+            50%{background-color: red;}
+            100%{background-color: green;}
+
+        }
+        .animax1{
+            animation: animationExTwo 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box moveBox"></div>
+    <div class="box rotateBox">AAAAAA</div>
+    <div class="box scaleBox">AAAAAA</div>
+    <div class="box transExp">JAVA</div>
+    <div class="box animax">JAVA</div>
+    <div class="box animax1">JAVA</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.OffersSec{
+    height: 200px;
+    background-image: linear-gradient(to right, white, orange);
+}
+
+.BKLoyaltyCrown{
+    background-color: rgb(115, 42, 42);
+}
+.customYelloHeading{
+    background-color: rgb(169, 169, 34);
+}
+.cutomCoinColletor{
+    height: 200px;
+    background-color: blue;
+}
+.customPlayAndWin{
+    height: 200px;
+    background-color: rgb(128, 0, 55);
+}
+.customRedeem{
+    height: 200px;
+background-color: rgb(157, 108, 108);
+}
