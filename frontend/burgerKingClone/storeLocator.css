@@ -1,0 +1,39 @@
+
+body{
+    background-color: rgb(255, 244, 229) !important;
+
+}
+.customLocatorSearch{
+    /* background-color: rgb(238, 220, 196); */
+    padding: 1rem;
+
+}
+.customLocatorSearch input {
+    border-radius: 18px;
+
+}
+
+
+
+.custoIconOpenNow{
+    color: rgb(122, 180, 36);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.rightIcon{
+    color: orange;
+   
+}
+
+.rightIcon div{
+ border-radius: 50%;
+    box-shadow: 1px 1px 1px rgb(198, 198, 198);
+    padding: 7px;
+    margin-top: 20px;
+}
+
+.DineAndTake a{
+    color: orange;
+}
