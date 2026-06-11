@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .circle1{
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        .circle1{
+            cursor: pointer;
+        }
+        .Red1{
+            background-color: red;
+        }
+        .Yellow1{
+            background-color: rgb(255, 229, 84);
+        }
+        .Gray1{
+            background-color: gray;
+        }
+    </style>
+
+    </head>
+
+<body>
+    <h1>Hello, world!</h1>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/yellow.jpeg" class="card-img-top" alt="..." id="imgOne">
+                    <div class="card-body">
+                        <h5 class="card-title" id="titleProd">XUV 3XO (Yellow)</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-warning" id="btnChange">Go somewhere</a>
+                        <div class="d-flex mt-2">
+                            <div class="circle1 Red1 me-1" id="redBTN"></div>
+                            <div class="circle1 Yellow1 me-1" id="yellowBTN"></div>
+                            <div class="circle1 Gray1 me-1" id="grayBTN"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function grayCar(){
+        document.querySelector("#titleProd").textContent = "XUV 3XO (GRAY)"
+         document.querySelector("#titleProd").style.color = 'gray'
+        document.querySelector("#btnChange").classList.remove("btn-warning", "btn-danger")
+        document.querySelector("#btnChange").classList.add("btn-secondary")
+        document.querySelector("#imgOne").setAttribute("src", "./assets/gray.jpeg")
+    }
+
+
+    document.querySelector("#grayBTN").addEventListener("click", grayCar)
+
+    function redCar(){
+        document.querySelector("#titleProd").textContent = "XUV 3XO (RED)"
+        document.querySelector("#titleProd").style.color = 'red'
+         document.querySelector("#btnChange").classList.remove("btn-warning", "btn-secondary")
+        document.querySelector("#btnChange").classList.add("btn-danger")
+        document.querySelector("#imgOne").setAttribute("src", "./assets/red.jpeg")
+    }
+document.querySelector("#redBTN").addEventListener("click", redCar)
+
+    function yellowCar(){
+        document.querySelector("#titleProd").textContent = "XUV 3XO (YELLOW)"
+        document.querySelector("#titleProd").style.color = 'yellow'
+         document.querySelector("#btnChange").classList.remove("btn-secondary", "btn-danger")
+        document.querySelector("#btnChange").classList.add("btn-warning")
+        document.querySelector("#imgOne").setAttribute("src", "./assets/yellow.jpeg")
+    }
+document.querySelector("#yellowBTN").addEventListener("click", yellowCar)
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
