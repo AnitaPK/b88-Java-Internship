@@ -1,5 +1,6 @@
 import React from 'react'
 import Card  from './Card'
+import { Link } from 'react-router-dom'
 
 const Products = ({products}) => {
     return (
@@ -10,7 +11,9 @@ const Products = ({products}) => {
                     {
                         products.map((p, i) => (
                             <div className="col" key={i}>
+                             
                                <Card prod={p} />
+                            
                             </div>
                         ))
                     }
