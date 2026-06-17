@@ -1,6 +1,8 @@
 import React from 'react'
 import logoSujal from '../assets/logoSujal.png'
 import { Link } from 'react-router-dom'
+        import { FaRegUser } from "react-icons/fa";
+
 
 const Navbar = () => {
   return (
@@ -28,6 +30,7 @@ const Navbar = () => {
         </li>
       </ul>
       <form className="d-flex" role="search">
+        <Link to="/login" className='nav-link me-2 mt-1s'><FaRegUser /></Link>
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>

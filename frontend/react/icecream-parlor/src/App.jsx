@@ -12,6 +12,7 @@ import StoreLocator from './pages/StoreLocator'
 import Franchies from './pages/Franchies'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import IcecreamDetail from './components/IcecreamDetailPage'
+import Login from './components/login'
 
 function App() {
 
@@ -95,6 +96,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path='/login' element={<Login />}></Route>
         <Route path='/' element={<Products products={products}></Products>}></Route>
 
         <Route path='/offer' element={<TodaysOffer />}> </Route>
