@@ -62,9 +62,18 @@ const CreateTask = () => {
                 </div>
                 <div className="mb-3">
                   <label className="form-label">Status</label>
-                  <input type="text" className="form-control" 
+                  {/* <input type="text" className="form-control" 
                   onChange={(e)=>setStatus(e.target.value)}
-                  />
+                  /> */}
+                  <select name="status" id="" class="form-control" 
+                  onChange={(e)=>setStatus(e.target.value)}
+                  >
+                    <option value="" name="status">Select Status</option>
+                    <option value="pending" name="status">Pending</option>
+                    <option value="in-progress" name="status">In-Progress</option>
+                    <option value="completed" name="status">Completed</option>
+
+                  </select>
                 </div>
                 <div className="mb-3">
                   <label className="form-label">Start Date</label>
